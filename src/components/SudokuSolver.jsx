@@ -98,7 +98,7 @@ export function SudokuSolver() {
     if (!isGridValid(grid)) {
       toast({
         title: "Invalid Puzzle",
-        description: "The current puzzle configuration is invalid. Please check your inputs.",
+        description: "Konfigurasi puzzle saat ini salah. Tolong input kembali.",
         variant: "destructive",
       });
       return;
@@ -260,9 +260,6 @@ export function SudokuSolver() {
           <h1 className="text-4xl sm:text-5xl font-bold text-foreground tracking-tight">
             Sudoku Master
           </h1>
-          <p className="text-muted-foreground text-lg">
-            Watch the backtracking algorithm with MRV heuristic solve puzzles step by step
-          </p>
         </div>
 
         {/* Grid */}
@@ -304,7 +301,7 @@ export function SudokuSolver() {
         {/* Footer */}
         <div className="text-center text-sm text-muted-foreground animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <p>
-            Enter numbers 1-9 or generate a random puzzle to get started
+            Masukkan angka 1-9 atau generate puzzle secara random
           </p>
         </div>
       </div>
