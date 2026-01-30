@@ -102,12 +102,8 @@ export function* generateSolveStepsGenerator(grid) {
       if (result) {
         return true;
       }
-
-      // === MODIFIKASI ANIMASI BACKTRACK ===
-      // Jika sampai sini, berarti jalan buntu.
       
       // A. Tampilkan angka yang salah dengan warna merah (state: backtrack)
-      // Ini memberi tahu user: "Angka num di sini ternyata salah"
       yield { row, col, value: num, state: 'backtrack' };
 
       // B. Hapus nilai (Logika Backtrack)
